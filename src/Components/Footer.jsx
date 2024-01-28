@@ -48,7 +48,7 @@ function Footer() {
                                 </div>
                                 <div className="grid grid-cols-2 gap-8">
                                     <div>
-                                        <h2 className="mb-6 text-3xl text-light font-semibold uppercase ">Sitemap:</h2>
+                                        <h2 className="mb-6 text-3xl text-light font-semibold uppercase ">Pages:</h2>
                                         <ul className=" font-medium">
                                             <li className="mb-4">
                                                 <a href="/about" className="hover:underline">About</a>

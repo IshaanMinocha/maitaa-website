@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Hero from '../Components/Hero'
 import VisionMission from '../Components/VisionMission';
 import AboutUs from '../Components/AboutUs';
+import DocsShowcase from '../Components/DocsShowcase';
 
 export default function Home({setProgress}) {
 
@@ -17,6 +18,7 @@ export default function Home({setProgress}) {
     <Hero/>
     <AboutUs/>
     <VisionMission/>
+    <DocsShowcase/>
     </>
   )
 }

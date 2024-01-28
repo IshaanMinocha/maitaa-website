@@ -4,11 +4,8 @@ export default function VisionMission() {
     return (
         <>
             <div className='bg-gray-600 py-10 grid grid-cols-2 justify-items-center'>
-
-                <h1 className="mb-4 text-5xl font-extrabold tracking-tight leading-none text-white px-20">Our Vision</h1>
-                <h1 className="mb-4 text-5xl font-extrabold tracking-tight leading-none text-white px-20">Our Mission</h1>
-
-
+                <h1 className="underline decoration-primary mb-4 text-5xl font-extrabold tracking-tight leading-none text-white ">Our Vision</h1>
+                <h1 className="underline decoration-primary mb-4 text-5xl font-extrabold tracking-tight leading-none text-white ">Our Mission</h1>
 
                 <div class="max-w-lg bg-gray-600 border border-gray-600 rounded-lg shadow-lg transition-transform transform hover:scale-110 duration-200 z-0 mt-10">
                     <img class="rounded-t-lg" src="/mait.jpg" alt="" />
