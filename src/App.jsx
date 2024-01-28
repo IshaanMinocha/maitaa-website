@@ -10,6 +10,8 @@ import Donations from './Views/Donations.jsx'
 import About from './Views/About.jsx'
 import Contact from './Views/Contact.jsx'
 import Smriti24 from "./Views/Smriti24.jsx";
+import Gallery from "./Views/Gallery.jsx";
+import BackToTop from "./Components/BackToTop.jsx";
 
 function App() {
 
@@ -32,8 +34,10 @@ function App() {
           <Route path="/donations" element={<Donations setProgress={setProgress} />} />
           <Route path="/contact" element={<Contact setProgress={setProgress} />} />
           <Route path="/smriti24" element={<Smriti24 setProgress={setProgress} />} />
+          <Route path="/gallery" element={<Gallery setProgress={setProgress} />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
+        <BackToTop />
         <Footer />
       </BrowserRouter>
     </>

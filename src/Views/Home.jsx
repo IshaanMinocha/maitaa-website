@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import Hero from '../Components/Hero'
+import VisionMission from '../Components/VisionMission';
+import AboutUs from '../Components/AboutUs';
 
 export default function Home({setProgress}) {
 
@@ -11,6 +13,10 @@ export default function Home({setProgress}) {
   }, [])
 
   return (
+    <>
     <Hero/>
+    <AboutUs/>
+    <VisionMission/>
+    </>
   )
 }

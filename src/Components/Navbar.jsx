@@ -15,10 +15,10 @@ function Navbar() {
     const shouldHideHeader = hiddenHeaderPaths.includes(location.pathname);
 
     return (
-        <div>
-            {!shouldHideHeader && (
-                <>
-                    <nav className="w-full z-20">
+        <>
+            {/* {!shouldHideHeader && (
+                <div className=""> */}
+                    <nav className="w-full z-20 drop-shadow-lg">
                         <div className="flex flex-wrap items-center justify-between">
                             <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                                 <img src="/main-logo.png" className="h-24 m-2" alt="MAITAA" />
@@ -34,7 +34,7 @@ function Navbar() {
                             </div>
                         </div>
                     </nav>
-                    <div className="sticky top-0 flex flex-wrap bg-secondary h-16 justify-center">
+                    <div className="sticky top-0 flex flex-wrap bg-secondary h-16 justify-center z-50">
                         <div className="items-center justify-between hidden w-max md:flex" id="navbar-sticky">
                             <ul className="flex flex-col p-1 text-xl font-bold space-x-16 md:flex-row mt-0 ml-10 divide-x-2">
                                 <li>
@@ -47,6 +47,9 @@ function Navbar() {
                                     <NavLink to="/events" style={navLinkStyles} className="ml-16 block py-2 px-3 rounded md:p-0">Events</NavLink>
                                 </li>
                                 <li>
+                                    <NavLink to="/gallery" style={navLinkStyles} className="ml-16 block py-2 px-3 rounded md:p-0">Gallery</NavLink>
+                                </li>
+                                <li>
                                     <NavLink to="/donations" style={navLinkStyles} className="ml-16 block py-2 px-3 rounded md:p-0">Donations</NavLink>
                                 </li>
                                 <li>
@@ -55,10 +58,9 @@ function Navbar() {
                             </ul>
                         </div>
                     </div>
-                </>
-            )}
-
-        </div>
+                {/* </div>
+            )} */}
+        </>
     );
 }
 

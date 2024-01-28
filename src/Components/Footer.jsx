@@ -25,80 +25,74 @@ function Footer() {
             <>
                 {!shouldHideFooter && (
 
-                    <footer className="bg-white text-dark">
+                    <footer className="bg-secondary text-white">
                         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                             <div className="md:flex md:justify-between">
-                                Reach Us: <br />
-                                Maharaja Agrasen
-                                Institute of Technology <br />
-                                Plot No 1 Rohini, Plot No 1,
-                                CH Bhim Singh <br /> Nambardar Marg,
-                                Sector 22, PSP Area,
-                                Delhi, 110086 <br />
-                                <br />
-                                map api integration remains
-                                <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                                <div className='grid grid-cols-1'>
+
+                                    <div className='text-3xl text-light font-semibold uppercase'>
+                                        Reach Us:
+                                    </div>
                                     <div>
-                                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Sitemap:</h2>
+                                        <div className='text-xl font-medium py-3'>
+                                            Maharaja Agrasen
+                                            Institute of Technology
+                                        </div>
+                                        <div className='text-lg font-normal max-w-xs'>
+                                            Plot No 1 Rohini, Plot No 1,
+                                            CH Bhim Singh  Nambardar Marg,
+                                            Sector 22, <br /> PSP Area,
+                                            Delhi, 110086
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="grid grid-cols-2 gap-8">
+                                    <div>
+                                        <h2 className="mb-6 text-3xl text-light font-semibold uppercase ">Sitemap:</h2>
                                         <ul className=" font-medium">
                                             <li className="mb-4">
-                                                <a href="/" className="hover:underline">About</a>
+                                                <a href="/about" className="hover:underline">About</a>
                                             </li>
                                             <li className="mb-4">
-                                                <a href="/" className="hover:underline">Donations</a>
+                                                <a href="/donations" className="hover:underline">Donations</a>
                                             </li>
                                             <li className="mb-4">
-                                                <a href="/" className="hover:underline">Contact</a>
+                                                <a href="/contact" className="hover:underline">Contact</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div>
-                                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-center">Socials:</h2>
+                                        <h2 className="mb-6 text-3xl text-light font-semibold uppercase">Socials:</h2>
                                         <ul className=" font-medium">
-                                            <div className='grid grid-cols-2'>
-
-                                                <li className="mb-4">
-                                                    <a href="/" className="hover:underline ">Linkedin</a>
-                                                </li>
-                                                <li className="mb-4">
-                                                    <a href="/" className="hover:underline ">Whatsapp</a>
-                                                </li>
-                                                <li className="mb-4">
-                                                    <a href="/" className="hover:underline ">X</a>
-                                                </li>
-                                                <li className="mb-4">
-                                                    <a href="/" className="hover:underline ">Facebook</a>
-                                                </li>
-                                                <li className="mb-4">
-                                                    <a href="/" className="hover:underline ">Youtube</a>
-                                                </li>
-                                                <li className="mb-4">
-                                                    <a href="/" className="hover:underline ">Instagram</a>
-                                                </li>
+                                            <div className='grid grid-cols-3'>
+                                                <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='linkedin' bgColor="#EF574A" fgColor='#fff' />
+                                                <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='youtube' bgColor="#EF574A" fgColor='#fff' /><SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='x' bgColor="#EF574A" fgColor='#fff' /><SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='whatsapp' bgColor="#EF574A" fgColor='#fff' /><SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='facebook' bgColor="#EF574A" fgColor='#fff' /><SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='instagram' bgColor="#EF574A" fgColor='#fff' />
                                             </div>
                                         </ul>
                                     </div>
-                                    <div>
-                                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Latest Events:</h2>
+                                    {/* <div>
+                                        <h2 className="mb-6 text-3xl text-light font-semibold uppercase">Events:</h2>
                                         <ul className="font-medium">
                                             <li className="mb-4">
-                                                <a href="#" className="hover:underline">Smriti 2024</a>
+                                                <a href="/" className="hover:underline">Smriti 2024</a>
                                             </li>
                                             <li>
-                                                <a href="#" className="hover:underline">Alumni Meet</a>
+                                                <a href="/" className="hover:underline">Alumni Meet</a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
-                            <hr className="my-6 border-gray-700" />
+                            <hr className="my-6 border-light" />
                             <div className="sm:flex sm:items-center sm:justify-between">
                                 <span className="text-xl text-center">Maintained under
                                     <a href="https://github.com/IshaanMinocha/maitaa-website" className="hover:underline text-dark text-2xl mx-1">
                                         Alumni Cell
                                     </a>
-                                    <br />
-                                    &#169; <CurrentYearComponent /> MAIT
+                                    <br />&#169; <CurrentYearComponent />
+                                    <a href="https://mait.ac.in/" className="hover:underline text-dark text-2xl mx-1">
+                                     MAIT
+                                    </a>. All Rights Reserved.
                                 </span>
                                 {/* <div className='grid grid-cols-2'>
                         <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='linkedin' bgColor="#EF574A" fgColor='#fff' />
