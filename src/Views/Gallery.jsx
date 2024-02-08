@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Navbar from '../Components/Navbar';
 
 export default function Gallery({ setProgress }) {
     useEffect(() => {
@@ -9,6 +10,7 @@ export default function Gallery({ setProgress }) {
     }, [])
     return (
         <>
+            <Navbar />
             <div>Gallery</div>
         </>
 

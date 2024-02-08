@@ -3,6 +3,7 @@ import Hero from '../Components/Hero'
 import VisionMission from '../Components/VisionMission';
 import AboutUs from '../Components/AboutUs';
 import DocsShowcase from '../Components/DocsShowcase';
+import Navbar from '../Components/Navbar';
 
 export default function Home({setProgress}) {
 
@@ -15,6 +16,7 @@ export default function Home({setProgress}) {
 
   return (
     <>
+    <Navbar />
     <Hero/>
     <AboutUs/>
     <VisionMission/>

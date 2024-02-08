@@ -12,6 +12,7 @@ export default {
         'normaltext' : ['Roboto', 'sans-serif'],
       },
       backgroundImage: {
+        'smriti': "url('smriti-bg2.jpg')"
       },
       colors: {
         'light': '#F9F3DC',

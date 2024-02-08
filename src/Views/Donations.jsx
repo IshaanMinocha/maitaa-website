@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Navbar from '../Components/Navbar';
 
 export default function Donations({setProgress}) {
 
@@ -9,6 +10,9 @@ export default function Donations({setProgress}) {
     }, 500)
   }, [])
   return (
+    <>
+    <Navbar/>
     <div>Donations</div>
+    </>
   )
 }

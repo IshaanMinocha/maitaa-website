@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Navbar from '../Components/Navbar';
 
 export default function Events({setProgress}) {
 
@@ -9,6 +10,9 @@ export default function Events({setProgress}) {
     }, 1000)
   }, [])     
   return (
-    <div>Events</div>
+    <>
+    <Navbar/>
+    events
+    </>
   )
 }

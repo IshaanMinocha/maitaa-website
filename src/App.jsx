@@ -20,7 +20,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
         <LoadingBar
           color='#EF574A'
           progress={progress}
