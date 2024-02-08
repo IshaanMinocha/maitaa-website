@@ -41,7 +41,7 @@ function Navbar() {
                                     <NavLink to="/" style={navLinkStyles} className="block py-2 px-3 rounded md:p-0" aria-current="page">Home</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/about" style={navLinkStyles} className="ml-16 block py-2 px-3 rounded md:p-0">About</NavLink>
+                                    <NavLink to="/smriti24" style={navLinkStyles} className="ml-16 block py-2 px-3 rounded md:p-0">About</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to="/events" style={navLinkStyles} className="ml-16 block py-2 px-3 rounded md:p-0">Events</NavLink>
