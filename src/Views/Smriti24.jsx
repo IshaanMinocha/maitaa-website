@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AnimatePresence, motion } from "framer-motion";
+import Schedule from '../Components/Schedule';
+import { SocialIcon } from 'react-social-icons';
 
 export default function Smriti24({ setProgress }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -61,12 +63,12 @@ export default function Smriti24({ setProgress }) {
   };
 
   return (
-    <>
+    <div className='bg-light text-dark'>
       <div className="flex flex-col items-center h-screen bg-[url('/smriti-bg2.jpg')] bg-no-repeat bg-fixed bg-cover">
         <nav className="fixed top-10 w-full max-w-2xl rounded-3xl border-2 border-secondary bg-light shadow-lg z-50">
           <div className="mx-auto flex justify-between items-center py-4 px-6">
             <div className="flex items-center">
-              <NavLink to="/smriti24" className="font-semibold font-subhead text-4xl">Smriti</NavLink>
+              <NavLink to="/smriti24" className="font-semibold font-subhead text-4xl text-dark">Smriti</NavLink>
             </div>
             <div className="md:hidden">
               <button onClick={toggleMobileMenu} className="text-dark hover:text-secondary">
@@ -106,9 +108,12 @@ export default function Smriti24({ setProgress }) {
             <h1 class="mb-4 text-8xl font-extrabold tracking-widest font-normaltext text-dark">MAIT SMRITI 2k24</h1>
             <p class="mb-16 text-4xl font-semibold font-subhead tracking-widest text-secondary">RELIVE | REJOICE | RECONNECT</p>
           </div>
+          <div className="font-bold tracking-widest text-center my-10 font-heading text-6xl text-dark">
+            16<sup>th</sup> March
+          </div>
         </section>
         <div className="w-[99vw]">
-        <h1 class="my-2 text-3xl text-dark text-center">SEE YOU IN</h1>
+          <h1 class="my-2 text-3xl text-dark text-center">SEE YOU IN</h1>
           <div className="w-full max-w-3xl mx-auto flex items-center bg-light rounded-3xl">
             <CountdownItem num={remaining.days} text="days" />
             <CountdownItem num={remaining.hours} text="hours" />
@@ -118,25 +123,54 @@ export default function Smriti24({ setProgress }) {
         </div>
         <div className="container mx-auto text-center scroll-smooth">
           <NavLink onClick={() => scrollToSection('about')}>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 m-auto my-10 animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 m-auto my-10 animate-bounce text-dark">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
             </svg>
           </NavLink>
         </div>
       </div>
-      <section id="about" className="text-black flex flex-col items-center justify-center mt-16">
+      <section id="about" className="text-light bg-dark flex flex-col items-center justify-center p-20">
         <h1>About</h1>
         <p>about section...</p>
       </section>
-      <section id="schedule" className="text-black flex flex-col items-center justify-center mt-16">
-        <h1>schedule</h1>
-        <p>List of schedule...</p>
+      <section id="schedule" className="text-dark bg-light flex flex-col items-center justify-center">
+        <Schedule />
       </section>
-      <section id="sponsors" className="text-black flex flex-col items-center justify-center mt-16">
+      <section id="sponsors" className="text-light bg-dark flex flex-col items-center justify-center p-20">
         <h1>Sponsors</h1>
         <p>List of sponsors...</p>
       </section>
-    </>
+      <footer className="footer items-center p-4 bg-light text-dark shadow-xl">
+        <aside className="items-center grid-flow-col">
+          <img src="alumni-logo.png" alt="logo" className="w-20" />
+          <p className=' text-xl'>Maintained under <a className='hover:underline font-bold text-secondary' href='https://github.com/IshaanMinocha/maitaa-website'>Alumni Cell
+          </a> | © 2024 <a className='hover:underline font-bold text-secondary' href='https://mait.ac.in/'>
+              MAIT
+            </a>
+          </p>
+        </aside>
+        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+          <a>
+            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="linkedin" bgColor="#01447C" fgColor="#fff" />
+          </a>
+          <a>
+            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="whatsapp" bgColor="#01447C" fgColor="#fff" />
+          </a>
+          <a>
+            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="instagram" bgColor="#01447C" fgColor="#fff" />
+          </a>
+          <a>
+            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="facebook" bgColor="#01447C" fgColor="#fff" />
+          </a>
+          <a>
+            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="x" bgColor="#01447C" fgColor="#fff" />
+          </a>
+          <a>
+            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="youtube" bgColor="#01447C" fgColor="#fff" />
+          </a>
+        </nav>
+      </footer>
+    </div>
   );
 };
 

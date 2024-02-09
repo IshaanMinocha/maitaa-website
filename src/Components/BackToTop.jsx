@@ -25,7 +25,7 @@ const BackToTop = () => {
 
   return (
     <div
-      className={`fixed hover:opacity-100 bottom-4 right-4 bg-primary p-3 rounded-full cursor-pointer ${
+      className={`fixed hover:opacity-100 bottom-28 right-4 bg-primary p-3 rounded-full cursor-pointer ${
         isVisible ? 'opacity-50' : 'opacity-0'
       } transition-opacity duration-300`}
       onClick={scrollToTop}

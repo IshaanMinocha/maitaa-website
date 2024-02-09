@@ -18,7 +18,7 @@ function Navbar() {
         <>
             {/* {!shouldHideHeader && (
                 <div className=""> */}
-                    <nav className="w-full z-20 drop-shadow-lg">
+                    <nav className="w-full z-20 drop-shadow-lg bg-light">
                         <div className="flex flex-wrap items-center justify-between">
                             <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                                 <img src="/main-logo.png" className="h-24 m-2" alt="MAITAA" />
