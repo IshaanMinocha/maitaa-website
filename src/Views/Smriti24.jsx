@@ -62,7 +62,7 @@ export default function Smriti24({ setProgress }) {
 
   return (
     <>
-      <div className="flex flex-col items-center h-screen bg-smriti bg-no-repeat bg-fixed bg-cover">
+      <div className="flex flex-col items-center h-screen bg-[url('/smriti-bg2.jpg')] bg-no-repeat bg-fixed bg-cover">
         <nav className="fixed top-10 w-full max-w-2xl rounded-3xl border-2 border-secondary bg-light shadow-lg z-50">
           <div className="mx-auto flex justify-between items-center py-4 px-6">
             <div className="flex items-center">
