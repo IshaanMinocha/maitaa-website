@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Schedule() {
+function ScheduleSmriti() {
     const [showAll, setShowAll] = useState(false);
 
     const toggleShowAll = () => {
@@ -73,7 +73,7 @@ function Schedule() {
 
     return (
         <>
-            <h1 className="my-10 text-5xl font-extrabold tracking-widest font-heading text-dark">Schedule</h1>
+            <h1 className="my-10 text-5xl underline decoration-secondary font-extrabold tracking-widest font-heading text-dark">Schedule</h1>
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-light">
                 {scheduleItems.slice(0, showAll ? scheduleItems.length : 5).map((item, index) => (
                     <li key={index}>
@@ -97,4 +97,4 @@ function Schedule() {
     );
 }
 
-export default Schedule;
+export default ScheduleSmriti;
