@@ -66,8 +66,8 @@ export default function Smriti24({ setProgress }) {
 
   return (
     <div className='bg-light text-dark'>
-      <div className="flex flex-col items-center h-screen bg-[url('/smriti-bg2.jpg')] bg-no-repeat bg-fixed bg-cover">
-        <nav className="fixed top-10 w-full max-w-2xl rounded-3xl border-2 border-secondary bg-light shadow-lg z-50">
+      <div className="flex flex-col items-center bg-[url('/smriti-bg2.jpg')] bg-no-repeat bg-fixed bg-cover">
+        <nav className="fixed top-10 w-[300px] sm:w-full sm:max-w-2xl rounded-3xl border-2 border-secondary bg-light shadow-lg z-50">
           <div className="mx-auto flex justify-between items-center py-4 px-6">
             <div className="flex items-center">
               <NavLink to="/smriti24" className="font-semibold font-subhead text-4xl text-dark">Smriti</NavLink>
@@ -172,7 +172,7 @@ export default function Smriti24({ setProgress }) {
       <section id="sponsors" className="text-light bg-dark flex flex-col items-center justify-center">
         <SponsorsSmriti />
       </section>
-      <footer className="footer items-center p-4 bg-light text-dark shadow-xl">
+      <footer className="footer md:justify-between items-center p-4 bg-light text-dark shadow-xl">
         <aside className="items-center grid-flow-col">
           <img src="alumni-logo.png" alt="logo" className="w-20" />
           <p className=' text-xl'>Maintained under <a className='hover:underline font-bold text-secondary' href='https://github.com/IshaanMinocha/maitaa-website'>Alumni Cell
@@ -181,24 +181,24 @@ export default function Smriti24({ setProgress }) {
             </a>
           </p>
         </aside>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <nav className="flex flex-wrap mx-auto">
           <a>
-            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="linkedin" bgColor="#01447C" fgColor="#fff" />
+            <SocialIcon className="hover:opacity-90 duration-100" url="/" network="linkedin" bgColor="#01447C" fgColor="#fff" />
           </a>
           <a>
-            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="whatsapp" bgColor="#01447C" fgColor="#fff" />
+            <SocialIcon className="hover:opacity-90 duration-100" url="/" network="whatsapp" bgColor="#01447C" fgColor="#fff" />
           </a>
           <a>
-            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="instagram" bgColor="#01447C" fgColor="#fff" />
+            <SocialIcon className="hover:opacity-90 duration-100" url="/" network="instagram" bgColor="#01447C" fgColor="#fff" />
           </a>
           <a>
-            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="facebook" bgColor="#01447C" fgColor="#fff" />
+            <SocialIcon className="hover:opacity-90 duration-100" url="/" network="facebook" bgColor="#01447C" fgColor="#fff" />
           </a>
           <a>
-            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="x" bgColor="#01447C" fgColor="#fff" />
+            <SocialIcon className="hover:opacity-90 duration-100" url="/" network="x" bgColor="#01447C" fgColor="#fff" />
           </a>
           <a>
-            <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="youtube" bgColor="#01447C" fgColor="#fff" />
+            <SocialIcon className="hover:opacity-90 duration-100" url="/" network="youtube" bgColor="#01447C" fgColor="#fff" />
           </a>
         </nav>
       </footer>
