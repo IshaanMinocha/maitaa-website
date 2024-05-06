@@ -3,11 +3,11 @@ import React from 'react'
 export default function VisionMission() {
     return (
         <>
-            <div className='bg-gray-600 py-10 grid grid-cols-2 justify-items-center'>
-                <h1 className="underline decoration-primary mb-4 text-5xl font-extrabold tracking-tight leading-none text-white ">Our Vision</h1>
-                <h1 className="underline decoration-primary mb-4 text-5xl font-extrabold tracking-tight leading-none text-white ">Our Mission</h1>
+            <div className='bg-gray-600 py-10 sm:grid sm:grid-cols-2 p-6 sm:justify-items-center flex flex-col items-center'>
+                <h1 className="underline decoration-primary sm:mb-4 mb-2 text-5xl font-extrabold tracking-tight leading-none text-white ">Our Vision</h1>
+                <h1 className="underline sm:block hidden decoration-primary sm:mb-4 mb-2 text-5xl font-extrabold tracking-tight leading-none text-white ">Our Mission</h1>
 
-                <div class="max-w-lg bg-gray-600 border border-gray-600 rounded-lg shadow-lg transition-transform transform hover:scale-110 duration-200 z-0 mt-10">
+                <div class="xl:max-w-lg lg:max-w-md md:max-w-xs max-w-72 bg-gray-600 border border-gray-600 rounded-lg shadow-lg transition-transform transform hover:scale-110 duration-200 z-0 mt-10">
                     <img class="rounded-t-lg" src="/mait.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="mb-5 text-3xl font-subhead font-bold tracking-tight text-dark text-center">Fostering Innovation Through Alumni Engagement</h5>
@@ -15,7 +15,9 @@ export default function VisionMission() {
                     </div>
                 </div>
 
-                <div class="max-w-lg bg-gray-600 border border-gray-600 rounded-lg shadow-lg transition-transform transform hover:scale-110 duration-200 z-0 mt-10">
+                <h1 className="underline sm:hidden block mt-12 sm:mt-0 decoration-primary sm:mb-4 mb-2 text-5xl font-extrabold tracking-tight leading-none text-white ">Our Mission</h1>
+
+                <div class="xl:max-w-lg lg:max-w-md md:max-w-xs max-w-72 bg-gray-600 border border-gray-600 rounded-lg shadow-lg transition-transform transform hover:scale-110 duration-200 z-0 mt-10">
                     <img class="rounded-t-lg" src="/mait.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="mb-5 text-3xl font-subhead font-bold tracking-tight text-dark text-center">Empowering Growth Through Lifelong Engagement</h5>

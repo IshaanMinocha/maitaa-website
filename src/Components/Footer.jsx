@@ -38,7 +38,7 @@ function Footer() {
                                             Maharaja Agrasen
                                             Institute of Technology
                                         </div>
-                                        <div className='text-lg font-normal max-w-xs'>
+                                        <div className='text-lg font-normal max-w-xs pb-4'>
                                             Plot No 1 Rohini, Plot No 1,
                                             CH Bhim Singh  Nambardar Marg,
                                             Sector 22, <br /> PSP Area,
