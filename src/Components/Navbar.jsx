@@ -11,7 +11,7 @@ function Navbar() {
     };
 
     const location = useLocation();
-    const hiddenHeaderPaths = ['/smriti24'];
+    const hiddenHeaderPaths = ['/smriti25'];
     const shouldHideHeader = hiddenHeaderPaths.includes(location.pathname);
 
     return (
@@ -24,7 +24,7 @@ function Navbar() {
                                 <img src="/main-logo.png" className="h-24 m-2" alt="MAITAA" />
                             </NavLink>
 
-                            <div className="grid grid-cols-6">
+                            <div className="md:grid md:grid-cols-6 hidden">
                                 <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="linkedin" bgColor="#EF574A" fgColor="#fff" />
                                 <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="whatsapp" bgColor="#EF574A" fgColor="#fff" />
                                 <SocialIcon className="m-1 hover:opacity-90 duration-100" url="/" network="instagram" bgColor="#EF574A" fgColor="#fff" />

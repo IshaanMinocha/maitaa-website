@@ -32,7 +32,7 @@ function App() {
           <Route path="/events" element={<Events setProgress={setProgress} />} />
           <Route path="/donations" element={<Donations setProgress={setProgress} />} />
           <Route path="/contact" element={<Contact setProgress={setProgress} />} />
-          <Route path="/smriti24" element={<Smriti24 setProgress={setProgress} />} />
+          <Route path="/smriti25" element={<Smriti24 setProgress={setProgress} />} />
           <Route path="/gallery" element={<Gallery setProgress={setProgress} />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
