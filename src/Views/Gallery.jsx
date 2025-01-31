@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import Masonry from "react-masonry-css"
 import { X } from "lucide-react"
+import Footer from '../Components/Footer';
 
 const pastEventImages = [
     { id: 1, src: "mait.jpg", alt: "Event 1" },
@@ -104,6 +105,7 @@ export default function Gallery({ setProgress }) {
                     </motion.div>
                 )}
             </div>
+            <Footer />
         </>
     )
 }

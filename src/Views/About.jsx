@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar';
 import AboutUs from '../Components/AboutUs';
 import VisionMission from '../Components/VisionMission';  
 import DocsShowcase from '../Components/DocsShowcase';
+import Footer from '../Components/Footer';
 
 export default function About({setProgress}) {
 
@@ -18,6 +19,7 @@ export default function About({setProgress}) {
     <AboutUs/>
     <VisionMission/>
     <DocsShowcase/>
+    <Footer/>
     </>
   )
 }

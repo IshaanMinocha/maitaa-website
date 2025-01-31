@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
     return (
-        <section className="bg-center bg-no-repeat bg-[url('/mait.jpg')] bg-cover bg-gray-700 bg-blend-multiply py-5">
+        <section className="bg-center bg-no-repeat bg-[url('/mait.jpg')] bg-cover bg-gray-700 bg-blend-multiply py-5 h-[80vh]">
             <div className="px-4 mx-auto max-w-screen-xl text-center pt-28">
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Welcome To Alumni Cell</h1>
                 {/* <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Alumni cell is..

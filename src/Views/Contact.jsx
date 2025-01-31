@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import Navbar from '../Components/Navbar';
 import { SocialIcon } from 'react-social-icons';
+import Footer from '../Components/Footer';
 
 function Contact({ setProgress }) {
   useEffect(() => {
@@ -56,6 +57,7 @@ function Contact({ setProgress }) {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   )
 }
