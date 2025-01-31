@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Hero from '../Components/Hero'
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import Events from '../Components/Events';
 
 export default function Home({setProgress}) {
 
@@ -16,6 +17,7 @@ export default function Home({setProgress}) {
     <>
     <Navbar />
     <Hero/>
+    <Events/>
     <Footer/>
     </>
   )
