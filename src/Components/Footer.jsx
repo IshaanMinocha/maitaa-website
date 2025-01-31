@@ -17,19 +17,17 @@ function CurrentYearComponent() {
 function Footer() {
 
     const location = useLocation();
-    const hiddenFooterPaths = ['/smriti24'];
+    const hiddenFooterPaths = ['/smriti25'];
     const shouldHideFooter = hiddenFooterPaths.includes(location.pathname);
 
     return (
         <div>
             <>
                 {!shouldHideFooter && (
-
                     <footer className="bg-secondary text-white">
                         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-                            <div className="md:flex md:justify-between">
-                                <div className='grid grid-cols-1'>
-
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className='flex flex-col'>
                                     <div className='text-3xl text-light font-semibold uppercase'>
                                         Reach Us:
                                     </div>
@@ -49,7 +47,7 @@ function Footer() {
                                 <div className="grid grid-cols-2 gap-8">
                                     <div>
                                         <h2 className="mb-6 text-3xl text-light font-semibold uppercase ">Pages:</h2>
-                                        <ul className=" font-medium">
+                                        <ul className="font-medium">
                                             <li className="mb-4">
                                                 <a href="/about" className="hover:underline">About</a>
                                             </li>
@@ -63,10 +61,14 @@ function Footer() {
                                     </div>
                                     <div>
                                         <h2 className="mb-6 text-3xl text-light font-semibold uppercase">Socials:</h2>
-                                        <ul className=" font-medium">
-                                            <div className='grid grid-cols-3'>
+                                        <ul className="font-medium">
+                                            <div className='grid grid-cols-3 gap-2'>
                                                 <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='linkedin' bgColor="#EF574A" fgColor='#fff' />
-                                                <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='youtube' bgColor="#EF574A" fgColor='#fff' /><SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='x' bgColor="#EF574A" fgColor='#fff' /><SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='whatsapp' bgColor="#EF574A" fgColor='#fff' /><SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='facebook' bgColor="#EF574A" fgColor='#fff' /><SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='instagram' bgColor="#EF574A" fgColor='#fff' />
+                                                <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='youtube' bgColor="#EF574A" fgColor='#fff' />
+                                                <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='x' bgColor="#EF574A" fgColor='#fff' />
+                                                <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='whatsapp' bgColor="#EF574A" fgColor='#fff' />
+                                                <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='facebook' bgColor="#EF574A" fgColor='#fff' />
+                                                <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='instagram' bgColor="#EF574A" fgColor='#fff' />
                                             </div>
                                         </ul>
                                     </div>
@@ -84,7 +86,7 @@ function Footer() {
                                 </div>
                             </div>
                             <hr className="my-6 border-light" />
-                            <div className="sm:flex sm:items-center sm:justify-between">
+                            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                                 <span className="text-xl text-center">Maintained under
                                     <a href="https://github.com/IshaanMinocha/maitaa-website" className="hover:underline text-dark text-2xl mx-1">
                                         Alumni Cell
@@ -103,8 +105,8 @@ function Footer() {
                         <SocialIcon className='m-1 hover:opacity-90 duration-100' url="/" network='youtube' bgColor="#EF574A" fgColor='#fff' />
                     </div> */}
                                 <div className="mb-6 md:mb-0">
-                                    <a href="/" className="flex items-center">
-                                        <img src="main-logo.png" className="h-32 me-3" alt="Logo" />
+                                    <a href="/" className="flex items-center justify-center">
+                                        <img src="main-logo.png" className="h-24 md:h-32" alt="Logo" />
                                     </a>
                                 </div>
                             </div>

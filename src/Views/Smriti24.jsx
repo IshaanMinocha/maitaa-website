@@ -5,6 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 import AboutSmriti from '../Components/AboutSmriti';
 import ScheduleSmriti from '../Components/ScheduleSmriti';
 import SponsorsSmriti from '../Components/SponsorsSmriti';
+import Smriti25Timeline from '../Components/Smriti25Timeline';
 
 export default function Smriti24({ setProgress }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -177,7 +178,8 @@ export default function Smriti24({ setProgress }) {
         <AboutSmriti />
       </section>
       <section id="schedule" className="text-dark bg-light flex flex-col items-center justify-center">
-        <ScheduleSmriti />
+        {/* <ScheduleSmriti /> */}
+        <Smriti25Timeline />
       </section>
       <section id="sponsors" className="text-light bg-dark flex flex-col items-center justify-center">
         <SponsorsSmriti />
