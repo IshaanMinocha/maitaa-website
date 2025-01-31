@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 import Navbar from '../Components/Navbar';
+import AboutUs from '../Components/AboutUs';
+import VisionMission from '../Components/VisionMission';  
+import DocsShowcase from '../Components/DocsShowcase';
 
 export default function About({setProgress}) {
 
@@ -12,7 +15,9 @@ export default function About({setProgress}) {
   return (
     <>
     <Navbar/>
-    <div>About</div>
+    <AboutUs/>
+    <VisionMission/>
+    <DocsShowcase/>
     </>
   )
 }

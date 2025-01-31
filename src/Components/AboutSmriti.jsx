@@ -4,19 +4,19 @@ import React from 'react';
 function AboutSmriti() {
     return (
         <>
-            <h1 className="my-12 text-5xl underline decoration-secondary font-extrabold tracking-widest font-heading text-center">About</h1>
-            <div className='mb-10 text-3xl font-subhead max-w-5xl text-center mx-auto xl:px-24 px-6'>
-                <p className="mb-8">
-                    MAIT SMRITI is our annual alumni meet that continues to bring alumni together, creating lasting memories that cannot be replaced. SMRITI organizes and collaborates on alumni reunion activities, providing a platform for alumni to communicate, collaborate on academic and cultural matters, and foster close relationships. MAIT SMRITI facilitates professionals from diverse fields to share their expertise. This year, we anticipate a footfall of over 500 attendees, representing a steady ten percent growth from previous years.
+            <h1 className="my-8 md:my-12 text-3xl md:text-4xl lg:text-5xl underline decoration-secondary font-extrabold tracking-widest font-heading text-center">About</h1>
+            <div className='mb-6 md:mb-10 text-xl md:text-2xl lg:text-3xl font-subhead max-w-5xl text-center mx-auto xl:px-24 px-4 md:px-6'>
+                <p className="mb-6 md:mb-8">
+                    MAIT SMRITI is our annual alumni meet that unites alumni, fostering lasting memories. It organizes reunion activities, enabling alumni to engage in academic and cultural discussions while building strong relationships. This year, we expect over 500 attendees, reflecting a consistent ten percent growth from previous years.
                 </p>
-                <p className="text-2xl text-slate-400">
+                <p className="text-lg md:text-xl lg:text-2xl text-slate-400">
                     Join us in celebrating the spirit of togetherness and knowledge sharing at MAIT SMRITI.
                 </p>
             </div>
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 100 100"
-                className="w-20 h-20 absolute hidden xl:block right-40 "
+                className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 absolute hidden xl:block right-10 md:right-20 lg:right-40"
                 animate={{
                     y: [0, -20, 0],
                 }}
@@ -32,7 +32,7 @@ function AboutSmriti() {
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 100 100"
-                className="w-20 h-20 absolute hidden xl:block left-40"
+                className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 absolute hidden xl:block left-10 md:left-20 lg:left-40"
                 initial={{ rotate: 180 }}
                 animate={{
                     y: [0, 20, 0],

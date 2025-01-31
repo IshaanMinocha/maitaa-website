@@ -44,7 +44,8 @@ export default function Smriti25Timeline() {
 
     return (
         <div className="max-w-3xl mx-auto p-4 md:p-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#5D4037] mb-8 text-center">Event Schedule</h2>
+            {/* <h2 className="text-2xl md:text-3xl font-bold text-[#5D4037] mb-8 text-center">Event Schedule</h2> */}
+            <h1 className="my-8 md:my-12 text-3xl md:text-4xl text-[#5D4037] lg:text-5xl font-bold tracking-widest font-heading text-center">Schedule</h1>
 
             <div className="relative">
                 {/* Vertical line */}
